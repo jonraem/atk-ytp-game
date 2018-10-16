@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App__content-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  width: 50rem;
+  margin: auto;
+  background-color: dodgerblue;
+}

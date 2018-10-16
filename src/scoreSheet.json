@@ -1,0 +1,132 @@
+{
+  "planning": {
+    "a": {
+      "customer": 0.5,
+      "feature": 0.5,
+      "bug": 0,
+      "money": 0
+    },
+    "b": {
+      "customer": 0,
+      "feature": 0.5,
+      "bug": 0,
+      "money": 0.5
+    },
+    "c": {
+      "customer": 0,
+      "feature": 0,
+      "bug": 0.5,
+      "money": 0.5
+    },
+    "d": {
+      "customer": 1.25,
+      "feature": -0.25,
+      "bug": -0.25,
+      "money": -0.25
+    }
+  },
+  "sprint1": {
+    "a": {
+      "customer": 0,
+      "feature": 0,
+      "bug": 1,
+      "money": 1
+    },
+    "b": {
+      "customer": 0,
+      "feature": 1,
+      "bug": -0.5,
+      "money": 0
+    },
+    "c": {
+      "customer": 0,
+      "feature": 0,
+      "bug": 0,
+      "money": 1
+    },
+    "d": {
+      "customer": 0,
+      "feature": -0.25,
+      "bug": -0.25,
+      "money": 1
+    }
+  },
+  "sprint2": {
+    "a": {
+      "customer": 0,
+      "feature": 0,
+      "bug": 1,
+      "money": 1
+    },
+    "b": {
+      "customer": 0,
+      "feature": -0.5,
+      "bug": 2,
+      "money": -0.25
+    },
+    "c": {
+      "customer": -0.5,
+      "feature": 0,
+      "bug": 0,
+      "money": 1
+    },
+    "d": {
+      "customer": 1.25,
+      "feature": 0.25,
+      "bug": 0,
+      "money": 0
+    }
+  },
+  "sprint3": {
+    "a": {
+      "customer": 0.5,
+      "feature": 0,
+      "bug": -0.5,
+      "money": -0.25
+    },
+    "b": {
+      "customer": -1,
+      "feature": 0,
+      "bug": 0.25,
+      "money": 0.25
+    },
+    "c": {
+      "customer": 0.25,
+      "feature": 0,
+      "bug": 0,
+      "money": 0.75
+    },
+    "d": {
+      "customer": -2,
+      "feature": 0,
+      "bug": 0,
+      "money": 0
+    }
+  },
+  "release": {
+    "a": {
+      "customer": 0.5,
+      "feature": 0,
+      "bug": 1,
+      "money": -0.25
+    },
+    "b": {
+      "customer": -1,
+      "feature": 0,
+      "bug": 0,
+      "money": -0.5
+    },
+    "c": {
+      "customer": -0.5,
+      "feature": -2,
+      "bug": 1,
+      "money": 0
+    },
+    "d": {
+      "customer": -1,
+      "feature": 1,
+      "bug": -1,
+      "money": 1
+    }
+  }
+}

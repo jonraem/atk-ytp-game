@@ -1,0 +1,15 @@
+.AnswerInputs {
+  height: 5rem;
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+
+.AnswerInputs input {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin: 0 auto;
+}
