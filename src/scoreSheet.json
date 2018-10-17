@@ -1,103 +1,103 @@
 {
   "planning": {
     "a": {
-      "customer": 0.5,
-      "feature": 0.5,
+      "customer": 7.5,
+      "feature": 7.5,
       "bug": 0,
       "money": 0
     },
     "b": {
       "customer": 0,
-      "feature": 0.5,
+      "feature": 7.5,
       "bug": 0,
-      "money": 0.5
+      "money": 7.5
     },
     "c": {
       "customer": 0,
       "feature": 0,
-      "bug": 0.5,
-      "money": 0.5
+      "bug": 7.5,
+      "money": 7.5
     },
     "d": {
-      "customer": 1.25,
-      "feature": -0.25,
-      "bug": -0.25,
-      "money": -0.25
+      "customer": 30,
+      "feature": -5,
+      "bug": -5,
+      "money": -5
     }
   },
   "sprint1": {
     "a": {
       "customer": 0,
       "feature": 0,
-      "bug": 1,
-      "money": 1
+      "bug": 12.5,
+      "money": 20
     },
     "b": {
       "customer": 0,
-      "feature": 1,
-      "bug": -0.5,
+      "feature": 22.5,
+      "bug": -15,
       "money": 0
     },
     "c": {
       "customer": 0,
       "feature": 0,
       "bug": 0,
-      "money": 1
+      "money": 15
     },
     "d": {
       "customer": 0,
-      "feature": -0.25,
-      "bug": -0.25,
-      "money": 1
+      "feature": -7.5,
+      "bug": -7.5,
+      "money": 15
     }
   },
   "sprint2": {
     "a": {
       "customer": 0,
       "feature": 0,
-      "bug": 1,
-      "money": 1
+      "bug": 15,
+      "money": 15
     },
     "b": {
       "customer": 0,
-      "feature": -0.5,
-      "bug": 2,
-      "money": -0.25
+      "feature": -15,
+      "bug": 30,
+      "money": -5
     },
     "c": {
-      "customer": -0.5,
+      "customer": -15,
       "feature": 0,
       "bug": 0,
-      "money": 1
+      "money": 15
     },
     "d": {
-      "customer": 1.25,
-      "feature": 0.25,
+      "customer": 30,
+      "feature": 5,
       "bug": 0,
       "money": 0
     }
   },
   "sprint3": {
     "a": {
-      "customer": 0.5,
+      "customer": 15,
       "feature": 0,
-      "bug": -0.5,
-      "money": -0.25
+      "bug": -15,
+      "money": -5
     },
     "b": {
-      "customer": -1,
+      "customer": -15,
       "feature": 0,
-      "bug": 0.25,
-      "money": 0.25
+      "bug": 7.5,
+      "money": 7.5
     },
     "c": {
-      "customer": 0.25,
+      "customer": 5,
       "feature": 0,
       "bug": 0,
-      "money": 0.75
+      "money": 15
     },
     "d": {
-      "customer": -2,
+      "customer": -30,
       "feature": 0,
       "bug": 0,
       "money": 0
@@ -105,28 +105,28 @@
   },
   "release": {
     "a": {
-      "customer": 0.5,
+      "customer": 7.5,
       "feature": 0,
-      "bug": 1,
-      "money": -0.25
+      "bug": 15,
+      "money": -7.5
     },
     "b": {
-      "customer": -1,
+      "customer": -15,
       "feature": 0,
       "bug": 0,
-      "money": -0.5
+      "money": -7.5
     },
     "c": {
-      "customer": -0.5,
-      "feature": -2,
-      "bug": 1,
+      "customer": -7.5,
+      "feature": -30,
+      "bug": 15,
       "money": 0
     },
     "d": {
-      "customer": -1,
-      "feature": 1,
-      "bug": -1,
-      "money": 1
+      "customer": -15,
+      "feature": 15,
+      "bug": -15,
+      "money": 15
     }
   }
 }

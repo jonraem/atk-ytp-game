@@ -8,10 +8,10 @@ import { calculateScore } from '../helpers';
 class App extends Component {
   state = {
     score: {
-      customer: 0,
-      feature: 0,
-      bug: 0,
-      money: 0
+      customer: 50,
+      feature: 50,
+      bug: 50,
+      money: 50
     },
     answers: {
       planning: undefined,

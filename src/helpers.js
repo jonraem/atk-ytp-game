@@ -2,10 +2,10 @@ import scoreSheet from './scoreSheet';
 
 export const calculateScore = (newAnswers) => {
   let newScore = {
-    customer: 0,
-    feature: 0,
-    bug: 0,
-    money: 0
+    customer: 50,
+    feature: 50,
+    bug: 50,
+    money: 50
   };
 
   for (let key in newAnswers) {
