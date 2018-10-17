@@ -1,0 +1,10 @@
+.Stat__label {
+  font-family: 'Lobster';
+  font-size: 3rem;
+  color: white;
+}
+
+.Stat__value {
+  color: white;
+  font-size: 2rem;
+}

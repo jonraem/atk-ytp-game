@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { capitalize } from 'lodash';
-import StatElement from '../StatElement/StatElement';
+import Stat from '../Stat/Stat';
 import './AnswerStatistics.css';
 
 export class AnswerStatistics extends Component {
   mapScore = (score) => {
     const elements = [];
     for (let element in score) {
-      elements.push(<StatElement label={capitalize(element)} value={score[element]} />)
+      elements.push(<Stat label={capitalize(element)} value={score[element]} />)
     }
     return elements;
   };
