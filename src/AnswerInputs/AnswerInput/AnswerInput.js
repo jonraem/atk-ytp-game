@@ -15,9 +15,24 @@ const RadioButton = ({ id, onChange, checked }) => (
   </div>
 );
 
+const CriticalHitButton = ({ criticalHit, onClick }) => (
+  <div 
+    style={ criticalHit ? { backgroundColor: 'maroon' } : null}
+    className="AnswerInput__critical-hit-button"
+    onClick={onClick}
+  />
+);
+
 export class AnswerInput extends Component {
   state = {
-    option: undefined
+    option: undefined,
+    criticalHit: false
+  };
+
+  handleCriticalHit = () => {
+    // ???
+    console.log('Critical hit!');
+    this.setState({ criticalHit: true });
   };
 
   handleInputChange = (e) => {
@@ -28,6 +43,7 @@ export class AnswerInput extends Component {
   render() {
     return (
       <div className="AnswerInput">
+        <CriticalHitButton criticalHit={this.state.criticalHit} onClick={this.handleCriticalHit} />
         <form className="AnswerInput__radiogroup">
           <RadioButton
             id="a"
@@ -50,6 +66,7 @@ export class AnswerInput extends Component {
             checked={this.state.option === 'd'}
           />
         </form>
+        <div className="AnswerInput__label">{this.props.type.toUpperCase()}</div>
       </div>
     );
   }
