@@ -1,16 +1,31 @@
 import React, { Component } from 'react';
-import Input from '../Input/Input';
+import AnswerInput from './AnswerInput/AnswerInput';
 import './AnswerInputs.css';
 
 export class AnswerInputs extends Component {
   render() {
     return (
       <div className="AnswerInputs">
-        <Input label="Planning" type="planning" updateScore={this.props.updateScore} />
-        <Input label="Sprint 1" type="sprint1" updateScore={this.props.updateScore} />
-        <Input label="Sprint 2" type="sprint2" updateScore={this.props.updateScore} />
-        <Input label="Sprint 3" type="sprint3" updateScore={this.props.updateScore} />
-        <Input label="Release" type="release" updateScore={this.props.updateScore} />
+        <AnswerInput
+          type="planning"
+          updateScore={this.props.updateScore}
+        />
+        <AnswerInput
+          type="sprint1"
+          updateScore={this.props.updateScore}
+        />
+        <AnswerInput
+          type="sprint2"
+          updateScore={this.props.updateScore}
+        />
+        <AnswerInput
+          type="sprint3"
+          updateScore={this.props.updateScore}
+        />
+        <AnswerInput
+          type="release"
+          updateScore={this.props.updateScore}
+        />
       </div>
     );
   }

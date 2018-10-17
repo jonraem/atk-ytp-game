@@ -1,0 +1,31 @@
+.AnswerInput {
+  background-color: white;
+  height: 12rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.AnswerInput__radiogroup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.AnswerInput__radio-label-a,
+.AnswerInput__radio-label-b,
+.AnswerInput__radio-label-c,
+.AnswerInput__radio-label-d {
+  margin-right: 1rem;
+}
+
+.AnswerInput__radio-button-a,
+.AnswerInput__radio-button-b,
+.AnswerInput__radio-button-c,
+.AnswerInput__radio-button-d {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  display: flex;
+}
