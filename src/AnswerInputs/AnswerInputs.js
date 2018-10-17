@@ -4,27 +4,28 @@ import './AnswerInputs.css';
 
 export class AnswerInputs extends Component {
   render() {
+    const { updateScore } = this.props;
     return (
       <div className="AnswerInputs">
         <AnswerInput
-          type="planning"
-          updateScore={this.props.updateScore}
+          sprintName="planning"
+          updateScore={updateScore}
         />
         <AnswerInput
-          type="sprint1"
-          updateScore={this.props.updateScore}
+          sprintName="sprint1"
+          updateScore={updateScore}
         />
         <AnswerInput
-          type="sprint2"
-          updateScore={this.props.updateScore}
+          sprintName="sprint2"
+          updateScore={updateScore}
         />
         <AnswerInput
-          type="sprint3"
-          updateScore={this.props.updateScore}
+          sprintName="sprint3"
+          updateScore={updateScore}
         />
         <AnswerInput
-          type="release"
-          updateScore={this.props.updateScore}
+          sprintName="release"
+          updateScore={updateScore}
         />
       </div>
     );

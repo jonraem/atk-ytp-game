@@ -12,9 +12,17 @@
   left: 28px;
   height: 2rem;
   width: 2rem;
-  background-color: red;
+  background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid white;
   border-radius: 15rem;
+}
+
+.AnswerInput__critical-hit-button.success {
+  background-color: darkgreen;
+}
+
+.AnswerInput__critical-hit-button.failure {
+  background-color: darkred;
 }
 
 .AnswerInput__radiogroup {
@@ -43,7 +51,7 @@
 }
 
 .AnswerInput__label {
-  color: white;
+  color: #fadb31;;
   font-weight: bold;
   position: absolute;
   margin-left: auto;

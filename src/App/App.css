@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   height: 100%;
+  background: url('../assets/space_bg.png');
+  background-repeat: repeat;
+  /* background-size: cover; */
 }
 
 .App__content-container {
@@ -8,14 +11,19 @@
   justify-content: space-around;
   flex-direction: column;
   height: 100vh;
-  width: 50rem;
+  width: 100%;
   margin: auto;
-  background-color: dodgerblue;
 }
 
 .App__title {
+  width: 800px;
   align-self: flex-start;
+  margin: 0 auto;
+
   font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
+  font-family: 'Poller One', 'cursive';
+  color: #fadb31;
 }

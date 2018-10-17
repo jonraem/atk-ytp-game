@@ -22,11 +22,11 @@ class App extends Component {
     }
   };
   
-  updateScore = (option, type) => {
+  updateScore = (answer, sprintName) => {
     const newAnswers = { 
       answers: {
         ...this.state.answers,
-        [type]: option
+        [sprintName]: answer
       }
      };
      const score = calculateScore(newAnswers.answers);
@@ -35,11 +35,10 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state)
     return (
       <div className="App">
         <div className="App__content-container">
-          <div className="App__title">Konsulttipeli</div>
+          <div className="App__title">Not so long time ago in a project not so far, far away....</div>
           <AnswerStatistics score={this.state.score} />
           <AnswerInputs updateScore={this.updateScore} />
         </div>

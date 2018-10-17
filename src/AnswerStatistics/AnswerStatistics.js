@@ -4,7 +4,8 @@ import Stat from '../Stat/Stat';
 import './AnswerStatistics.css';
 
 export class AnswerStatistics extends Component {
-  mapScore = (score) => {
+  mapScore = () => {
+    const { score } = this.props;
     const elements = [];
     for (let element in score) {
       elements.push(<Stat label={capitalize(element)} value={score[element]} />)
@@ -13,9 +14,10 @@ export class AnswerStatistics extends Component {
   };
 
   render() {
+    const score = this.mapScore();
     return (
       <div className="AnswerStatistics">
-        {this.mapScore(this.props.score)}
+        {score}
       </div>
     );
   }

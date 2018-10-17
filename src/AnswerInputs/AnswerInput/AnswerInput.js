@@ -15,58 +15,73 @@ const RadioButton = ({ id, onChange, checked }) => (
   </div>
 );
 
-const CriticalHitButton = ({ criticalHit, onClick }) => (
+const CriticalHitButton = ({ critModifier, onClick }) => (
   <div 
-    style={ criticalHit ? { backgroundColor: 'maroon' } : null}
-    className="AnswerInput__critical-hit-button"
+    className={`AnswerInput__critical-hit-button ${critModifier ? critModifier : ''}`}
     onClick={onClick}
   />
 );
 
 export class AnswerInput extends Component {
   state = {
-    option: undefined,
-    criticalHit: false
+    answer: undefined,
+    critModifier: undefined
   };
 
-  handleCriticalHit = () => {
-    // ???
-    console.log('Critical hit!');
-    this.setState({ criticalHit: true });
+  getCritModifier = () => {
+    const critModifier = Math.ceil(Math.random() * 6);
+    
+    if (critModifier === 1) {
+      this.setState({ critModifier: 'failure' });
+    }
+    if (critModifier === 6) {
+      this.setState({ critModifier: 'success' });
+    }
+    if (critModifier > 1 && critModifier < 6) {
+      this.setState({ critModifier: undefined })
+    }
+    
   };
 
   handleInputChange = (e) => {
-    this.setState({ option: e.target.value })
-    this.props.updateScore(e.target.value, this.props.type);
+    const { sprintName, updateScore } = this.props;
+    const answer = e.target.value;
+
+    this.setState({ answer });
+    this.getCritModifier();
+    updateScore(answer, sprintName);
   };
 
   render() {
+    const { answer, critModifier } = this.state;
+    const { sprintName } = this.props;
+  
     return (
       <div className="AnswerInput">
-        <CriticalHitButton criticalHit={this.state.criticalHit} onClick={this.handleCriticalHit} />
+        <CriticalHitButton critModifier={critModifier} onClick={this.handleCriticalHit} />
         <form className="AnswerInput__radiogroup">
           <RadioButton
             id="a"
             onChange={this.handleInputChange}
-            checked={this.state.option === 'a'}
+            checked={answer === 'a'}
           />
           <RadioButton
             id="b"
             onChange={this.handleInputChange}
-            checked={this.state.option === 'b'}
+            checked={answer === 'b'}
           />
           <RadioButton
             id="c"
             onChange={this.handleInputChange}
-            checked={this.state.option === 'c'}
+            checked={answer === 'c'}
           />
           <RadioButton
             id="d"
             onChange={this.handleInputChange}
-            checked={this.state.option === 'd'}
+            checked={answer === 'd'}
           />
         </form>
-        <div className="AnswerInput__label">{this.props.type.toUpperCase()}</div>
+        <div className="AnswerInput__label">{sprintName.toUpperCase()}</div>
       </div>
     );
   }
