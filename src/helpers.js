@@ -11,7 +11,7 @@ export const calculateScore = (newAnswers) => {
   for (let key in newAnswers) {
     const sprintAnswer = newAnswers[key];
     const sprint = scoreSheet[key];
-    if (sprintAnswer !== null || sprintAnswer !== undefined) {
+    if (sprintAnswer !== null && sprintAnswer !== undefined) {
       const score = sprint[sprintAnswer];
       newScore = {
         ...newScore,
