@@ -39,6 +39,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App__content-container">
+          <div className="App__title">Konsulttipeli</div>
           <AnswerStatistics score={this.state.score} />
           <AnswerInputs updateScore={this.updateScore} />
         </div>
