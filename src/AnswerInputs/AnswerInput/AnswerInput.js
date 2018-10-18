@@ -44,18 +44,21 @@ export class AnswerInput extends Component {
   };
 
   handleInputChange = (e) => {
-    const { sprintName, updateScore } = this.props;
+    const { sprintName, options, updateScore } = this.props;
     const answer = e.target.value;
-
+    // console.log(`Selected answer '${answer}':`, this.props.options[answer]);
     this.setState({ answer });
     this.getCritModifier();
-    updateScore(answer, sprintName);
+
+    // TODO: pass the score already from here {customer: 15, bug: -10, ...}
+    const score = options[answer];
+    console.log(`${sprintName} SCORE: `, score)
+    updateScore(score, sprintName);
   };
 
   render() {
     const { answer, critModifier } = this.state;
     const { sprintName } = this.props;
-  
     return (
       <div className="AnswerInput">
         <CriticalHitButton critModifier={critModifier} onClick={this.handleCriticalHit} />
@@ -64,6 +67,7 @@ export class AnswerInput extends Component {
             id="a"
             onChange={this.handleInputChange}
             checked={answer === 'a'}
+            // TODO: save to local state the selected option
           />
           <RadioButton
             id="b"

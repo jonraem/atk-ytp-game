@@ -7,8 +7,10 @@ export class AnswerStatistics extends Component {
   mapScore = () => {
     const { score } = this.props;
     const elements = [];
+    let index = 0;
     for (let element in score) {
-      elements.push(<Stat label={capitalize(element)} value={score[element]} />)
+      elements.push(<Stat key={index} label={capitalize(element)} value={score[element]} />)
+      index++;
     }
     return elements;
   };
