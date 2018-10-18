@@ -17,10 +17,18 @@ export class AnswerStatistics extends Component {
   };
 
   render() {
-    const score = this.mapScore();
+    const scoreBreakdown = this.mapScore();
+    const { customer, feature, bug, money } = this.props.score;
+    const totalScore = (customer + feature) - Math.abs(100 - bug) - Math.abs(100 - money);
+    
     return (
       <div className="AnswerStatistics">
-        {score}
+        <div className="AnswerStatistics__total">
+          Total score: {totalScore}
+        </div>
+        <div className="AnswerStatistics__breakdown">
+          {scoreBreakdown}
+        </div>
       </div>
     );
   }

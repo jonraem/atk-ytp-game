@@ -16,7 +16,8 @@
 }
 
 .App__title {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   align-self: flex-start;
   margin: 0 auto;
 
