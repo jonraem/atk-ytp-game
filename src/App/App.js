@@ -59,12 +59,10 @@ class App extends Component {
           }
        }  
       }
-      console.log("inside total", totalScore);
       return totalScore;
     }
 
     this.setState({ totalScore: calculateTotalScore() });
-    console.log(this.state);
   };
 
   

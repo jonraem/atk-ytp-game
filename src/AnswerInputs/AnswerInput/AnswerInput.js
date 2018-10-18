@@ -46,13 +46,11 @@ export class AnswerInput extends Component {
   handleInputChange = (e) => {
     const { sprintName, options, updateScore } = this.props;
     const answer = e.target.value;
-    // console.log(`Selected answer '${answer}':`, this.props.options[answer]);
+
     this.setState({ answer });
     this.getCritModifier();
 
-    // TODO: pass the score already from here {customer: 15, bug: -10, ...}
     const score = options[answer];
-    console.log(`${sprintName} SCORE: `, score)
     updateScore(score, sprintName);
   };
 

@@ -9,7 +9,8 @@ export class AnswerStatistics extends Component {
     const elements = [];
     let index = 0;
     for (let element in score) {
-      elements.push(<Stat key={index} label={capitalize(element)} value={score[element]} />)
+      const value = element === 'bug' || element === 'money' ? (100 - score[element]) : score[element];
+      elements.push(<Stat key={index} label={capitalize(element)} value={value} />)
       index++;
     }
     return elements;
