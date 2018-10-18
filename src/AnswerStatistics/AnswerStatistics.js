@@ -4,6 +4,7 @@ import Stat from '../Stat/Stat';
 import './AnswerStatistics.scss';
 
 export class AnswerStatistics extends Component {
+
   mapScore = () => {
     const { score } = this.props;
     const elements = [];

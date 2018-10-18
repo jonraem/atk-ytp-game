@@ -1,5 +1,25 @@
 .Stat {
   padding: 2rem;
+
+  &__delta {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+
+    &--up {
+      border-width: 0 20px 30px 20px;
+      border-color: transparent transparent green transparent;
+    }
+
+    &--down {
+      border-width: 30px 20px 0 20px;
+      border-color: red transparent transparent transparent;
+    }
+
+  }
 }
 
 .Stat__label {
@@ -11,4 +31,8 @@
 .Stat__value {
   color: white;
   font-size: 2rem;
+}
+
+.visible {
+  opacity: 1;
 }
