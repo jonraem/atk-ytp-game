@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AnswerInput.css';
+import './AnswerInput.scss';
 
 const RadioButton = ({ id, onChange, checked }) => (
   <div className={`AnswerInput__radio-button-${id}`}>

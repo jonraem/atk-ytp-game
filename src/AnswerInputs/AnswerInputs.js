@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AnswerInput from './AnswerInput/AnswerInput';
 import scoreScheet from '../scoreSheet.json';
-import './AnswerInputs.css';
+import './AnswerInputs.scss';
 
 const sprints = [
   {name: 'planning'},

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AnswerInputs from '../AnswerInputs/AnswerInputs';
 import AnswerStatistics from '../AnswerStatistics/AnswerStatistics';
-import './App.css';
+import './App.scss';
 
 const INITIAL_SCORE = {
   customer: 50,

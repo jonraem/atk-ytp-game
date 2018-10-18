@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { capitalize } from 'lodash';
 import Stat from '../Stat/Stat';
-import './AnswerStatistics.css';
+import './AnswerStatistics.scss';
 
 export class AnswerStatistics extends Component {
   mapScore = () => {

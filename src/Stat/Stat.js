@@ -1,5 +1,5 @@
 import React from 'react';
-import './Stat.css';
+import './Stat.scss';
 
 const Stat = ({ label, value }) => (
   <div className="Stat">

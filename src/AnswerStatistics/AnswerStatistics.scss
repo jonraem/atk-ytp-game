@@ -1,11 +1,15 @@
 .AnswerStatistics {
-  width: 40rem;
   margin: 0 auto;
 }
 
 .AnswerStatistics__breakdown {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+
+  @media screen and (max-width: '599px') {
+    flex-direction: column;    
+  }
 }
 
 .AnswerStatistics__total {
@@ -13,4 +17,5 @@
   font-size: 2.5rem;
   font-family: 'Lobster';
   margin-bottom: 3rem;
+  margin: 0 auto;
 }
