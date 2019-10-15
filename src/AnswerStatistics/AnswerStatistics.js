@@ -12,6 +12,8 @@ export class AnswerStatistics extends Component {
     for (let element in score) {
       const value = element === 'bug' || element === 'money' ? (100 - score[element]) : score[element];
       elements.push(<Stat key={index} label={capitalize(element)} value={value} />)
+      let isNegative = element === 'bug';
+      elements.push(<Stat key={index} label={capitalize(element)} value={value} isNegative={isNegative} />)
       index++;
     }
     return elements;
