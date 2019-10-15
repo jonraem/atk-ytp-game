@@ -15,12 +15,12 @@ const RadioButton = ({ id, onChange, checked }) => (
   </div>
 );
 
-const CriticalHitButton = ({ critModifier, onClick }) => (
-  <div 
-    className={`AnswerInput__critical-hit-button ${critModifier ? critModifier : ''}`}
-    onClick={onClick}
-  />
-);
+// const CriticalHitButton = ({ critModifier, onClick }) => (
+//   <div 
+//     className={`AnswerInput__critical-hit-button ${critModifier ? critModifier : ''}`}
+//     onClick={onClick}
+//   />
+// );
 
 export class AnswerInput extends Component {
   state = {
@@ -55,11 +55,10 @@ export class AnswerInput extends Component {
   };
 
   render() {
-    const { answer, critModifier } = this.state;
+    const { answer } = this.state;
     const { sprintName } = this.props;
     return (
       <div className="AnswerInput">
-        <CriticalHitButton critModifier={critModifier} onClick={this.handleCriticalHit} />
         <form className="AnswerInput__radiogroup">
           <RadioButton
             id="a"
