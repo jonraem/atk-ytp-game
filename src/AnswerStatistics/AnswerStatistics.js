@@ -10,9 +10,14 @@ export class AnswerStatistics extends Component {
     const elements = [];
     let index = 0;
     for (let element in score) {
-      const value = element === 'bug' || element === 'money' ? (100 - score[element]) : score[element];
-      elements.push(<Stat key={index} label={capitalize(element)} value={value} />)
+      let value = element === 'bug' ? (100 - score[element]) : score[element];
       let isNegative = element === 'bug';
+      if (element === 'money') {
+        value = `${value} K`;
+      }
+      if (element === 'feature' || element === 'bug') {
+        value = ~~value;
+      }
       elements.push(<Stat key={index} label={capitalize(element)} value={value} isNegative={isNegative} />)
       index++;
     }
@@ -22,7 +27,7 @@ export class AnswerStatistics extends Component {
   render() {
     const scoreBreakdown = this.mapScore();
     const { customer, feature, bug, money } = this.props.score;
-    const totalScore = (customer + feature) - Math.abs(100 - bug) - Math.abs(100 - money);
+    const totalScore = (customer + feature) - (100 - bug) - (100 - money);
     
     return (
       <div className="AnswerStatistics">
