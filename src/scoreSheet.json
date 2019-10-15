@@ -2,20 +2,20 @@
   "planning": {
     "a": {
       "customer": 7.5,
-      "feature": 7.5,
+      "feature": 7,
       "bug": 0,
       "money": 0
     },
     "b": {
       "customer": 0,
-      "feature": 7.5,
+      "feature": 7,
       "bug": 0,
       "money": 7.5
     },
     "c": {
       "customer": 0,
       "feature": 0,
-      "bug": 7.5,
+      "bug": 7,
       "money": 7.5
     },
     "d": {
@@ -29,12 +29,12 @@
     "a": {
       "customer": 0,
       "feature": 0,
-      "bug": 12.5,
+      "bug": 12,
       "money": 20
     },
     "b": {
       "customer": 0,
-      "feature": 22.5,
+      "feature": 22,
       "bug": -15,
       "money": 0
     },
@@ -46,8 +46,8 @@
     },
     "d": {
       "customer": 0,
-      "feature": -7.5,
-      "bug": -7.5,
+      "feature": -7,
+      "bug": -7,
       "money": 15
     }
   },
@@ -87,11 +87,11 @@
     "b": {
       "customer": -15,
       "feature": 0,
-      "bug": 7.5,
+      "bug": 7,
       "money": 7.5
     },
     "c": {
-      "customer": 7.5,
+      "customer": 7,
       "feature": 0,
       "bug": 0,
       "money": 15
