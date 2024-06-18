@@ -1,3 +1,5 @@
+[![No Maintenance Intended](https://unmaintained.tech/badge.svg)](https://unmaintained.tech/)
+
 # atk-ytp-game
 This is a simple score counting system for a table top game made for ATK-YTP 2018.
 
